@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'user_auth/css/profile_style.css'%}">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'user_auth/css/profile_style.css' %}">
+    <title>{{user.username}}</title>
 </head>
-<body>
+<body style="background-image: url({% static 'user_auth/img/blur_background.jpg'%})">
+    
     {% include 'user_auth/navbar.html'%}
-    <div>
-        <h1>{{user.username}}</h1>
-        {{user.last_name}}
+    
+    <div id="profileBox">
+        <div>
+            <img id="profilePhoto" src="https://pngimage.net/wp-content/uploads/2018/06/profil-png-5.png" alt="profilePhoto" width="50%" height="auto">
+            <h1 class="itemProfile">{{user.username}}</h1>
+        </div>
+        <div id="profileText">
+            <div>
+                <p class="itemTitleProfile">First Name</p>
+                <h1 class="itemProfile">{{user.first_name}}</h1>
+            </div>
+            <div>
+                <p class="itemTitleProfile">Last Name</p>
+                <h1 class="itemProfile">{{user.last_name}}</h1>
+            </div>
+            <div id="extraInfoProfile">
+                <div>
+                    <p class="itemTitleProfile">Email</p>
+                    <h1 class="itemProfile">{{user.email}}</h1>
+                </div>
+                <div>
+                    <p class="itemTitleProfile">Last Login</p>
+                    <h1 id="lastLogin" class="itemProfile">{{user.last_login}}</h1>
+                </div>
+            </div>
+        </div>
     </div>
-        <h1>{{user.email}}</h1>
 </body>
 </html>

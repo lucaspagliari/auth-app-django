@@ -1,0 +1,88 @@
+body {
+    background-repeat: no-repeat;
+}
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 728px) {
+    /* All profile content */
+    #profileBox {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    /* All text: name, email.. */
+    #profileText {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+    /* Email and Last Time Login */
+    #extraInfoProfile {
+        grid-column: 1/3;
+    }
+    /* All h1 -> has variables  */
+    .itemProfile {
+        font-size: 30px;
+    }
+}
+
+/* Desktop and Tablet Layout */
+
+@media only screen and (min-width: 729px) {
+    /* All profile content */
+    #profileBox {
+        height: auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 40% 50%;
+        text-align: center;
+    }
+    /* All text: name, email.. */
+    #profileText {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 70%;
+        text-align: justify;
+        padding-left: 3%;
+    }
+    /* Email and Last Time Login */
+    #extraInfoProfile {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    /* All h1 -> has variables  */
+    .itemProfile {
+        font-size: 25px;
+    }
+}
+
+/* Defining Colors and font */
+
+#profileBox {
+    background-color: #ebebebc4;
+    background-position: auto;
+    border-radius: 40px;
+    padding: 1%;
+    margin: 5%;
+}
+
+.itemTitleProfile {
+    color: #8989ff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.itemProfile {
+    color: #414141;
+    font-weight: 200;
+}
+/* Last time Login */
+#lastLogin {
+    font-size: 20px;
+}
+
+#profilePhoto {
+    margin-top: 50px;
+}

@@ -15,11 +15,13 @@ div.navItem {
     align-self: center;
 }
 
+/* Mobile only */
 @media only screen and (max-width: 768px) {
     #logo {
         font-size: 20px;
     }
 }
+/* Desktop and Tablet layout */
 @media only screen and (min-width: 768px) {
     #logo {
         font-size: 30px;
