@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'user_auth/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'user_auth/css/login_style.css' %}">
     <title>Login</title>
 </head>
 
-<body>
+<body style="background-image:url({% static 'user_auth/img/blur_background.jpg' %})">
+    <!-- Inserting Navigation Bar -->
     {% include "user_auth/navbar.html"%}
-    <div id="test">
-        <form method="POST" action="{% url 'login' %}">
-            {% csrf_token %}
-            <div class="inputBox">
-                <h3>
-                    {{form.username.label}}
-                </h3>
-                {{form.username}}
-            </div>
-            <div class="inputBox">
-                <h3>
-                    {{form.password.label}}
-                </h3>
-                {{form.password}}
-            </div>
-            <input type="submit" value="login">
-            <input type="hidden" name="next" value="{{next}}">
 
-        </form>
-        <a href="/accounts/register">Sign Up</a>
-    </div>
+    <!-- Formulário -->
+    <form id="formulary" method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
+        <div class="inputBox">
+            <h3>
+                {{form.username.label}}
+            </h3>
+            {{form.username}}
+        </div>
+        <div class="inputBox">
+            <h3>
+                {{form.password.label}}
+            </h3>
+            {{form.password}}
+        </div>
+        <input id="id_login" type="submit" value="login">
+        <input type="hidden" name="next" value="{{next}}">
 
-<script src="{% static 'scritp.js'%}"></script>
+    </form>
+    <p>Create an account! <br> <a id="signUp" href="/accounts/register">Sign Up</a></p>
+
+    <script src="{% static 'scritp.js'%}"></script>
 
 </body>
 

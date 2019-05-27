@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
     <link rel="stylesheet" href="{% static 'user_auth/css/index_style.css'%}">
-    <title>index</title>
+    <title>Auth.me</title>
 </head>
 
 <body>
     {% include "user_auth/navbar.html"%}
 
-    <!-- Sobre Conteúdo -->
+    <!-- About Content -->
     <div id="content">
         <div id="contentImg">
             <img id="mainImg" width="100%" height="100%"
                 src="https://glaucocustodio.github.io/assets/come%C3%A7ando-com-django-framework1.jpg">
         </div>
+        <!-- About the Project -->
         <div id="contentText">
             <h1>Authenticate Me</h1>
             <p style="text-align: justify;">
@@ -32,9 +33,10 @@
         </div>
     </div>
 
-    <!-- Contact: Email, github-->
-    <h2>Contact</h2>
+    <!-- Contact: Email, github and python.org-->
+    <h1 style="font-weight: 300;">Contact</h1>
     <div id="contact">
+        <!-- Email -->
         <div class="contactItem">
             <a onclick="alert('Send to: lucas.alex.pagliari@gmail.com')">
                 <img class="contactMediaLogo"
@@ -44,6 +46,7 @@
                 <p>Email me</p>
             </div>
         </div>
+        <!-- Github -->
         <div class="contactItem">
             <a target="_blank" href="https://github.com/lucaspagliari">
                 <img class="contactMediaLogo"
@@ -53,6 +56,7 @@
                 <p>See my other projects</p>
             </div>
         </div>
+        <!-- Python -->
         <div class="contactItem">
             <a target="_blank" href="https://www.python.org">
                 <img class="contactMediaLogo" src="https://eventos.python.org.br/logo.png">

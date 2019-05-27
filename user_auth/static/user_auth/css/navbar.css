@@ -4,15 +4,10 @@ body {
 }
 
 nav#navBar {
-    position: fixed;
     background-color: #e0e0e0;
     display: grid;
     grid-template-rows: 60px;
     grid-template-columns: 70% repeat(3, auto);
-}
-
-a:hover {
-    text-decoration: none;
 }
 
 div.navItem {
@@ -20,12 +15,26 @@ div.navItem {
     align-self: center;
 }
 
+@media only screen and (max-width: 768px) {
+    #logo {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #logo {
+        font-size: 30px;
+    }
+}
+
 a#logo {
     color: #2c2c2c;
     font-weight: 60;
-    font-size: 30px;
     margin: -70px 5px 0 0;
     text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 

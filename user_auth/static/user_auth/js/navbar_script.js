@@ -1,7 +1,6 @@
 
-//  Index Page
-// Exibe texto da barra de navegação (onmouseover)
-function optionText(i) {
+// onmouseover: Change logo text to the respective option
+function logoChangeText(i) {
     let textLogo = document.getElementById("logo");
     switch (i) {
         case 0:
@@ -16,7 +15,7 @@ function optionText(i) {
     }
 }
 
-// Retorna texto original da logo (onmouseout)
+//  onmouseout: Return logo text to default 
 function logoText() {
     let textLogo = document.getElementById("logo");
     textLogo.innerHTML = "<a>Django Web Dev</a>"

@@ -1,25 +1,29 @@
-
+<!-- Importing static files -->
 {% load static %}
 <link rel="stylesheet" href="{% static 'user_auth/css/navbar.css' %}">
 <script type="text/javascript" src="{% static 'user_auth/js/navbar_script.js' %}"></script>
 
 <nav id="navBar">
+    <!-- Logo Text -->
     <div class="navItem">
         <a id="logo" href="/">Django Web Dev</a>
     </div>
+    <!-- colored styled buttons -->
     <div class="navItem">
-        <a class="navButton" href="/accounts/login">
-            <span id="loginButton" class="dot" onmouseout="logoText()" onmouseover="optionText(0)"></span>
+        <!-- Go to Login -->
+        <a class="navButton" href="/accounts/login">    
+            <span id="loginButton" class="dot" onmouseout="logoText()" onmouseover="logoChangeText(0)"></span>
         </a>
     </div>
     <div class="navItem">
-        <a class="navButton" href="/accounts/login">
-            <span id="profileButton" class="dot" onmouseout="logoText()" onmouseover="optionText(1)"></span>
+        <!-- Go to  -->
+        <a class="navButton" href="/accounts/profile">
+            <span id="profileButton" class="dot" onmouseout="logoText()" onmouseover="logoChangeText(1)"></span>
         </a>
     </div>
     <div class="navItem">
         <a class="navButton" href="/accounts/logout">
-            <span id="logoutButton" class="dot" onmouseout="logoText()" onmouseover="optionText(2)"></span>
+            <span id="logoutButton" class="dot" onmouseout="logoText()" onmouseover="logoChangeText(2)"></span>
         </a>
     </div>
 </nav>
