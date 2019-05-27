@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {% load static %}
-    <link rel="stylesheet" href="{% static 'account/style.css' %}">
+    <link rel="stylesheet" href="{% static 'user_auth/css/style.css' %}">
     <title>Login</title>
 </head>
+
 <body>
- 
+    {% include "user_auth/navbar.html"%}
     <div id="test">
         <form method="POST" action="{% url 'login' %}">
             {% csrf_token %}
             <div class="inputBox">
-                <h3>Login</h3>
+                <h3>
+                    {{form.username.label}}
+                </h3>
                 {{form.username}}
             </div>
             <div class="inputBox">
-                <h3>Password</h3>
+                <h3>
+                    {{form.password.label}}
+                </h3>
                 {{form.password}}
             </div>
             <input type="submit" value="login">
             <input type="hidden" name="next" value="{{next}}">
-            
+
         </form>
         <a href="/accounts/register">Sign Up</a>
     </div>
 
-
+<script src="{% static 'scritp.js'%}"></script>
 
 </body>
+
 </html>
