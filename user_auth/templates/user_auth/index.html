@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        {% load static %}
-        <link rel="stylesheet" href="{% static 'user_auth/css/index_style.css'%}">
-        <title>index</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_auth/css/index_style.css'%}">
+    <title>index</title>
+</head>
 
 <body>
     {% include "user_auth/navbar.html"%}
@@ -16,11 +16,19 @@
     <!-- Sobre Conteúdo -->
     <div id="content">
         <div id="contentImg">
-            teste
+            <img id="mainImg" width="100%" height="100%"
+                src="https://glaucocustodio.github.io/assets/come%C3%A7ando-com-django-framework1.jpg">
         </div>
         <div id="contentText">
-            <h1>django</h1>
-            <p>texte</p>
+            <h1>Authenticate Me</h1>
+            <p style="text-align: justify;">
+                &emsp;Web with django makes our lifes so much easier. Here you gonna find an app that authenticate
+                an user and show his personal info. Try pressing on the top left buttons to use the authentication
+                system.
+                <br>
+                &emsp;One of the greatest things about Django is its versatility, because this app could be used in
+                others projects, also known as reusability.
+            </p>
         </div>
     </div>
 
@@ -47,8 +55,7 @@
         </div>
         <div class="contactItem">
             <a target="_blank" href="https://www.python.org">
-                <img class="contactMediaLogo"
-                    src="https://eventos.python.org.br/logo.png">
+                <img class="contactMediaLogo" src="https://eventos.python.org.br/logo.png">
             </a>
             <div>
                 <p>Python</p>
