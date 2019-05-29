@@ -1,3 +1,24 @@
+/* Mobile and Tablet Resize */
+@media only screen and (max-width: 1023px) {
+    #formulary {
+        width: 80%;
+        height: 300px;
+    }
+    #id_password {
+        text-align: center;
+        font-size: 25px;
+        width: 55%;
+        height: 25px;
+    }
+}
+
+/* Desktop layout */
+@media only screen and (min-width: 1024px) {
+    #formulary {
+        width: 50%;
+        height: 300px;
+    }
+}
 body {
     background-repeat: no-repeat;
     text-align: center;
@@ -83,28 +104,12 @@ body {
     background-color: #535353;
 }
 
-a#signUp{
+a#signUp {
     color: #4242ff;
 }
 
-/* Mobile and Tablet Resize */
-@media only screen and (max-width: 1023px) {
-    #formulary {
-        width: 70%;
-        height: 300px;
-    }
-    #id_password {
-        text-align: center;
-        font-size: 25px;
-        width: 55%;
-        height: 25px;
-    }
-}
-
-/* Desktop layout */
-@media only screen and (min-width: 1024px) {
-    #formulary {
-        width: 50%;
-        height: 300px;
-    }
+#errorMessage {
+    color: #ff4242;
+    font-size: 15px;
+    font-weight: 400;
 }

@@ -10,11 +10,11 @@
     <title>Login</title>
 </head>
 
-<body style="background-image:url({% static 'user_auth/img/blur_background.jpg' %})">
+<body style="background-image:url( {% static 'user_auth/img/blur_background.jpg' %} )">
     <!-- Inserting Navigation Bar -->
     {% include "user_auth/navbar.html"%}
 
-    <!-- Formulário -->
+    <!-- Formulary -->
     <form id="formulary" method="POST" action="{% url 'login' %}">
         {% csrf_token %}
         <div class="inputBox">
@@ -34,9 +34,12 @@
 
     </form>
     <p>Create an account! <br> <a id="signUp" href="/accounts/register">Sign Up</a></p>
-
-    <script src="{% static 'scritp.js'%}"></script>
-
+    <!--  -->
+    {% for error in form.non_field_errors %}
+        <div>
+            <h4 id="errorMessage">{{ error|escape }}</h4>
+        </div>
+    {% endfor %}
 </body>
 
 </html>

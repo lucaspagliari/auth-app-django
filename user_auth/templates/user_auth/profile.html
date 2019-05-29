@@ -12,9 +12,10 @@
     
     {% include 'user_auth/navbar.html'%}
     
+    {% if user.is_authenticated %}
     <div id="profileBox">
         <div>
-            <img id="profilePhoto" src="https://pngimage.net/wp-content/uploads/2018/06/profil-png-5.png" alt="profilePhoto" width="50%" height="auto">
+            <img id="profilePhoto" src="https://pngimage.net/wp-content/uploads/2018/06/profil-png-5.png" alt="profilePhoto" width="45%" height="auto">
             <h1 class="itemProfile">{{user.username}}</h1>
         </div>
         <div id="profileText">
@@ -38,5 +39,11 @@
             </div>
         </div>
     </div>
+    {% else %}
+    <div>
+        <h2 class="itemProfile">You are not logged in</h2>
+        <a href="/accounts/login">Login</a>
+    </div>
+    {% endif %}
 </body>
 </html>

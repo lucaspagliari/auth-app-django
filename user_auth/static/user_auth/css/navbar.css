@@ -3,29 +3,45 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-nav#navBar {
-    background-color: #e0e0e0;
-    display: grid;
-    grid-template-rows: 60px;
-    grid-template-columns: 70% repeat(3, auto);
+/* Mobile only */
+
+@media only screen and (max-width: 768px) {
+    #logo {
+        font-size: 20px;
+    }
+    .dot {
+        height: 20px;
+        width: 20px;
+    }
+    nav#navBar {
+        background-color: #e0e0e0;
+        display: grid;
+        grid-template-rows: 60px;
+        grid-template-columns: repeat(3, 10%) 70%;
+    }
+}
+
+/* Desktop and Tablet layout */
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        font-size: 30px;
+    }
+    .dot {
+        height: 27px;
+        width: 27px;
+    }
+    nav#navBar {
+        background-color: #e0e0e0;
+        display: grid;
+        grid-template-rows: 60px;
+        grid-template-columns: repeat(3, auto) 70%;
+    }
 }
 
 div.navItem {
     text-align: center;
     align-self: center;
-}
-
-/* Mobile only */
-@media only screen and (max-width: 768px) {
-    #logo {
-        font-size: 20px;
-    }
-}
-/* Desktop and Tablet layout */
-@media only screen and (min-width: 768px) {
-    #logo {
-        font-size: 30px;
-    }
 }
 
 a#logo {
@@ -43,8 +59,6 @@ a:hover {
 /* Mac Style Buttons */
 
 .dot {
-    height: 27px;
-    width: 27px;
     background-color: #ff2525;
     border-radius: 50%;
     display: inline-block;

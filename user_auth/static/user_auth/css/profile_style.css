@@ -1,5 +1,22 @@
+* {
+    box-sizing: content-box;
+}
+
 body {
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+div>a {
+    color: #6d6dff;
+    font-size: 20px;
+    font-weight: 400;
+    transition-duration: 300ms;
+}
+
+div>a:hover {
+    color: #4d4dff;
+    font-weight: 700;
 }
 
 /* Mobile Layout */
@@ -8,14 +25,14 @@ body {
     /* All profile content */
     #profileBox {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: 260px 300px;
         grid-template-columns: auto;
         text-align: center;
     }
     /* All text: name, email.. */
     #profileText {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         grid-template-rows: auto;
     }
     /* Email and Last Time Login */
@@ -24,7 +41,7 @@ body {
     }
     /* All h1 -> has variables  */
     .itemProfile {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -35,8 +52,9 @@ body {
     #profileBox {
         height: auto;
         display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 40% 50%;
+        margin: 0 10% 0 10%;
+        grid-template-rows: 400px;
+        grid-template-columns: 40% 40%;
         text-align: center;
     }
     /* All text: name, email.. */
@@ -64,7 +82,6 @@ body {
     background-color: #ebebebc4;
     background-position: auto;
     border-radius: 40px;
-    padding: 1%;
     margin: 5%;
 }
 
@@ -78,7 +95,9 @@ body {
     color: #414141;
     font-weight: 200;
 }
+
 /* Last time Login */
+
 #lastLogin {
     font-size: 20px;
 }

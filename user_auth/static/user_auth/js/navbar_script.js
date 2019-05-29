@@ -4,13 +4,13 @@ function logoChangeText(i) {
     let textLogo = document.getElementById("logo");
     switch (i) {
         case 0:
-            textLogo.innerHTML = "<a style='color:#00ca56'>Login</a>";
+            textLogo.innerHTML = "<a style='color:#ff5c5c'>Logout</a>";
             break;
         case 1:
             textLogo.innerHTML = "<a style='color:#ffbd4c'>Profile</a>";
             break;
         case 2:
-            textLogo.innerHTML = "<a style='color:#ff5c5c'>Logout</a>";
+            textLogo.innerHTML = "<a style='color:#00ca56'>Login</a>";
             break;
     }
 }
