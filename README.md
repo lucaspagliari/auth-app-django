@@ -8,19 +8,19 @@ A Django web app developed for a intern program. The main goal is to authenticat
 
 Install requirements.txt:  
 `
-pip install -r requeriments.txt
+python -m pip install -r requeriments.txt
 `  
-
-In the cmd Create a Super User:
+  
+In the **cmd** Create a Super User:  
 `
 python manage.py createsuperuser
 `
-
-Now start the application:
+  
+Now start the application:  
 `
 python manage.py runserver
 `
-
+  
 ### Enter in admin panel
 
 Using you super user that was created enter the following url:
@@ -29,4 +29,12 @@ localhost/admin
 `
 There you will be able to see all the information about the users.
 
+## Tools Used:
 
+* [Django](https://www.djangoproject.com/)
+* CSS: Flexbox and Grid
+* Javascript
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
