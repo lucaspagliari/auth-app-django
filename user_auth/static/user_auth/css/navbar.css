@@ -1,41 +1,43 @@
 body {
-    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    margin: 0;
 }
 
 /* Mobile only */
 
 @media only screen and (max-width: 768px) {
-    #logo {
-        font-size: 20px;
-    }
-    .dot {
-        height: 20px;
-        width: 20px;
-    }
     nav#navBar {
-        background-color: #e0e0e0;
         display: grid;
         grid-template-rows: 60px;
         grid-template-columns: repeat(3, 10%) 70%;
+        background-color: #e0e0e0;
+    }
+    /* Colored Buttons */
+    .dot {
+        width: 20px;
+        height: 20px;
+    }
+    #logo {
+        font-size: 20px;
     }
 }
 
 /* Desktop and Tablet layout */
 
 @media only screen and (min-width: 768px) {
-    #logo {
-        font-size: 30px;
-    }
-    .dot {
-        height: 27px;
-        width: 27px;
-    }
     nav#navBar {
-        background-color: #e0e0e0;
         display: grid;
         grid-template-rows: 60px;
         grid-template-columns: repeat(3, auto) 70%;
+        background-color: #e0e0e0;
+    }
+    /* Colored Buttons */
+    .dot {
+        width: 27px;
+        height: 27px;
+    }
+    #logo {
+        font-size: 30px;
     }
 }
 
@@ -45,11 +47,11 @@ div.navItem {
 }
 
 a#logo {
-    color: #2c2c2c;
-    font-weight: 60;
     margin: -70px 5px 0 0;
     text-align: center;
     text-decoration: none;
+    font-weight: 60;
+    color: #2c2c2c;
 }
 
 a:hover {
@@ -59,14 +61,14 @@ a:hover {
 /* Mac Style Buttons */
 
 .dot {
-    background-color: #ff2525;
-    border-radius: 50%;
     display: inline-block;
+    border-radius: 50%;
+    background-color: #ff2525;
 }
 
 #loginButton {
-    background-color: #00ca56;
     border: 1.3px solid #009942;
+    background-color: #00ca56;
     transition-duration: 300ms;
 }
 
@@ -75,8 +77,8 @@ a:hover {
 }
 
 #profileButton {
-    background-color: #ffbd4c;
     border: 1.3px solid #e09e3e;
+    background-color: #ffbd4c;
     transition-duration: 300ms;
 }
 
@@ -85,8 +87,8 @@ a:hover {
 }
 
 #logoutButton {
-    background-color: #ff5c5c;
     border: 1.3px solid #e33e41;
+    background-color: #ff5c5c;
     transition-duration: 300ms;
 }
 

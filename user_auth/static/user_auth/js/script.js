@@ -33,6 +33,7 @@ function logoText() {
 function redirectIndex() {
     let counter = document.getElementById("counterText");
     let x = 0;
+    // Loading effect
     setInterval(function () {
         let dots = "";
         x++;
@@ -45,6 +46,5 @@ function redirectIndex() {
             window.location.href = href.substring(0, href.length - 15);
         }
     }, 1000);
-
 };
 

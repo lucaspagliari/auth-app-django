@@ -15,7 +15,7 @@
     {% if user.is_authenticated %}
     <div id="profileBox">
         <div>
-            <img id="profilePhoto" src="https://pngimage.net/wp-content/uploads/2018/06/profil-png-5.png" alt="profilePhoto" width="45%" height="auto">
+            <img id="profilePhoto" src="{% static 'user_auth/img/profile_default.png' %}" alt="profilePhoto" width="45%" height="auto">
             <h1 class="itemProfile">{{user.username}}</h1>
         </div>
         <div id="profileText">

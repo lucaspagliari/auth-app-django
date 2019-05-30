@@ -3,20 +3,20 @@
 }
 
 body {
-    background-repeat: no-repeat;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 div>a {
-    color: #6d6dff;
     font-size: 20px;
     font-weight: 400;
+    color: #6d6dff;
     transition-duration: 300ms;
 }
 
 div>a:hover {
-    color: #4d4dff;
     font-weight: 700;
+    color: #4d4dff;
 }
 
 /* Mobile Layout */
@@ -32,8 +32,8 @@ div>a:hover {
     /* All text: name, email.. */
     #profileText {
         display: grid;
-        grid-template-columns: auto auto;
         grid-template-rows: auto;
+        grid-template-columns: auto auto;
     }
     /* Email and Last Time Login */
     #extraInfoProfile {
@@ -50,18 +50,18 @@ div>a:hover {
 @media only screen and (min-width: 729px) {
     /* All profile content */
     #profileBox {
-        height: auto;
         display: grid;
-        margin: 0 10% 0 10%;
+        height: auto;
         grid-template-rows: 400px;
         grid-template-columns: 40% 40%;
+        margin: 0 10% 0 10%;
         text-align: center;
     }
     /* All text: name, email.. */
     #profileText {
         display: grid;
-        grid-template-columns: 50% 50%;
         grid-template-rows: 30% 70%;
+        grid-template-columns: 50% 50%;
         text-align: justify;
         padding-left: 3%;
     }
@@ -76,8 +76,6 @@ div>a:hover {
     }
 }
 
-/* Defining Colors and font */
-
 #profileBox {
     background-color: #ebebebc4;
     background-position: auto;
@@ -85,23 +83,23 @@ div>a:hover {
     margin: 5%;
 }
 
+#profilePhoto {
+    margin-top: 50px;
+}
+
+/* Labels: name, last name, email... */
 .itemTitleProfile {
-    color: #8989ff;
-    font-weight: 500;
     font-size: 20px;
+    font-weight: 500;
+    color: #8989ff;
 }
 
 .itemProfile {
-    color: #414141;
     font-weight: 200;
+    color: #414141;
 }
 
 /* Last time Login */
-
 #lastLogin {
     font-size: 20px;
-}
-
-#profilePhoto {
-    margin-top: 50px;
 }

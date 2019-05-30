@@ -1,4 +1,5 @@
-/* Mobile and Tablet Resize */
+/* Mobile and Tablet Layout */
+
 @media only screen and (max-width: 1023px) {
     #formulary {
         width: 80%;
@@ -13,50 +14,54 @@
 }
 
 /* Desktop layout */
+
 @media only screen and (min-width: 1024px) {
     #formulary {
         width: 50%;
         height: 300px;
     }
 }
+
 body {
-    background-repeat: no-repeat;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 #formulary {
     position: relative;
     margin: 20px auto;
-    border-radius: 40px;
     text-align: center;
-    background-color: #ffffff31;
+    border-radius: 40px;
     color: #535353;
+    background-color: #ffffff31;
 }
+
+/* Label and Input */
 
 .inputBox {
     padding-top: 5px;
 }
 
 .inputBox>h3 {
-    letter-spacing: 2px;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 
 .inputField {
-    text-align: center;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 450;
     width: 55%;
     height: 25px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 450;
     color: #535353;
     border: solid 0.4px #696969;
+    border-radius: 20px;
     transition-duration: 500ms;
 }
 
 #id_username:focus {
-    border: solid 1px #4242ff;
     width: 60%;
+    border: solid 1px #4242ff;
 }
 
 #id_password:focus {
@@ -64,38 +69,42 @@ body {
     border: solid 1px #4242ff;
 }
 
+/* Submit button */
+
 #id_login {
     width: 100px;
     height: 30px;
     margin-top: 30px;
     font-size: 17px;
-    border: solid 0.4 #696969;
-    border-radius: 30px;
+    letter-spacing: 1px;
     color: #4242ff;
     background-color: #f5f5f5;
-    letter-spacing: 1px;
-    transition-duration: 400ms;
+    border: solid 0.4 #696969;
+    border-radius: 30px;
     cursor: pointer;
+    transition-duration: 400ms;
 }
 
 #id_login:hover {
-    border: solid 1px;
     width: 100px;
-    color: #f5f5f5;
     letter-spacing: 2px;
+    border: solid 1px;
+    color: #f5f5f5;
     background-color: #4242ff;
 }
 
 a#signUp {
-    color: #4242ff;
     letter-spacing: 1px;
+    color: #4242ff;
     transition-duration: 500ms;
 }
+
 a#signUp:hover {
     letter-spacing: 5px;
 }
+
 #errorMessage {
-    color: #ff4242;
     font-size: 15px;
     font-weight: 400;
+    color: #ff4242;
 }

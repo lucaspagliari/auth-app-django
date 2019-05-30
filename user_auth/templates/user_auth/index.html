@@ -16,8 +16,7 @@
     <!-- About Content -->
     <div id="content">
         <div id="contentImg">
-            <img id="mainImg" width="100%" height="100%"
-                src="https://glaucocustodio.github.io/assets/come%C3%A7ando-com-django-framework1.jpg">
+            <img id="mainImg" width="100%" height="100%" src="https://glaucocustodio.github.io/assets/come%C3%A7ando-com-django-framework1.jpg">
         </div>
         <!-- About the Project -->
         <div id="contentText">
@@ -39,27 +38,25 @@
         <!-- Email -->
         <div class="contactItem">
             <a onclick="alert('Send to: lucas.alex.pagliari@gmail.com')">
-                <img class="contactMediaLogo"
-                    src="https://www.shareicon.net/data/512x512/2016/11/22/854957_email_512x512.png">
+                <img class="contactMediaLogo" src="{% static 'user_auth/img/gmail_logo.png'%}" alt="gmailLogo">
             </a>
             <div>
                 <p>Email me</p>
             </div>
         </div>
-        <!-- Github -->
+        <!-- Github Image and Link-->
         <div class="contactItem">
             <a target="_blank" href="https://github.com/lucaspagliari">
-                <img class="contactMediaLogo"
-                    src="https://github.githubassets.com/images/modules/logos_page/Octocat.png">
+                <img class="contactMediaLogo" src="{% static 'user_auth/img/octocat.png'%}" alt="octocatGithub">
             </a>
             <div>
                 <p>See my other projects</p>
             </div>
         </div>
-        <!-- Python -->
+        <!-- Python Image and Link -->
         <div class="contactItem">
             <a target="_blank" href="https://www.python.org">
-                <img class="contactMediaLogo" src="https://eventos.python.org.br/logo.png">
+                <img class="contactMediaLogo" src="{% static 'user_auth/img/python_logo.png' %}" alt="pythonLogo">
             </a>
             <div>
                 <p>Python</p>
