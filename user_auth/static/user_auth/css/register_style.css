@@ -1,0 +1,87 @@
+@media only screen and (max-width: 768px) {
+    #formulary {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 80px);
+        margin: 5%;
+    }
+    #formTitle {
+        text-align: center;
+        margin-left: 5%;
+        font-weight: 400;
+    }
+    #submitButton {
+        text-align: center;
+        margin: 20px auto;
+    }
+}
+
+/* Desltop and tablet layout */
+
+@media only screen and (min-width: 769px) {
+    #formulary {
+        display: grid;
+        grid-template-rows: repeat(3, 80px);
+        grid-template-columns: 50% 50%;
+        margin-top: 30px;
+    }
+    #formTitle {
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 5px;
+    }
+    #submitButton {
+        /* grid-row: ; */
+        grid-column: 1/3;
+    }
+}
+
+#formTitle {
+    color: #fff;
+    letter-spacing: 6px;
+}
+
+.inputBox {
+    display: grid;
+    margin: 0 5% 0 5%;
+    color: #3f3f3f;
+    letter-spacing: 2px;
+    font-weight: 350;
+}
+
+.inputField {
+    width: 90%;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 30px;
+    border: solid 0.5px #8484ff;
+    transition-duration: 300ms;
+}
+
+.inputField:hover {
+    width: 92%;
+    border: solid 0.9px #5c5cff;
+}
+
+.inputField:focus {
+    width: 92%;
+    border: solid 0.9px #8484ff;
+}
+
+#submitButton {
+    width: 110px;
+    height: 35px;
+    margin: 50px auto;
+    color: #4242ff;
+    background-color: #ececec;
+    border: solid 0.4 #696969;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    transition-duration: 300ms;
+}
+
+#submitButton:hover {
+    color: #f5f5f5;
+    letter-spacing: 2px;
+    background-color: #4242ff;
+}

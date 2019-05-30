@@ -10,7 +10,7 @@
     <title>Login</title>
 </head>
 
-<body style="background-image:url( {% static 'user_auth/img/blur_background.jpg' %} )">
+<body onload="setInputClass()" style="background-image:url( {% static 'user_auth/img/blur_background.jpg' %} )">
     <!-- Inserting Navigation Bar -->
     {% include "user_auth/navbar.html"%}
 
@@ -30,7 +30,6 @@
             {{form.password}}
         </div>
         <input id="id_login" type="submit" value="login">
-        <input type="hidden" name="next" value="{{next}}">
 
     </form>
     <p>Create an account! <br> <a id="signUp" href="/accounts/register">Sign Up</a></p>

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_auth/css/logout_style.css' %}">
     <title>Logout</title>
 </head>
-{% load static %}
-<body style="background-image:url({% static 'user_auth/img/blur_background.jpg' %})">
 
-
+<body onload="redirectIndex()" style="background-image:url({% static 'user_auth/img/blur_background.jpg' %})">
+    
     {% include 'user_auth/navbar.html'%}
 
-    <h1>Logout</h1>
+    <div id="contentBox">
+        <h2>You Logged Out</h2>
+        <h1 id="counterText"></h1>
+    </div>
 </body>
+
 </html>

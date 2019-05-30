@@ -1,0 +1,12 @@
+body {
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+#contentBox {
+    letter-spacing: 5px;
+    color: #353535;
+}
+h2 {
+    font-weight: 300;
+}

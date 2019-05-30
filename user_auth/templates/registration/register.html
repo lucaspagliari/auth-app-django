@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>registration</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'user_auth/css/register_style.css'%}">
+    <title>Register</title>
 </head>
-<body>
+
+<body onload="setInputClass()" style="background-image:url( {% static 'user_auth/img/blur_background.jpg' %} )">
+
     {% include "user_auth/navbar.html"%}
-    <h1>Registration page</h1>
-    <form method="POST">
+    <h1 id="formTitle">Registration</h1>
+    <form id="formulary" method="POST">
         {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Register">
+        <div class="inputBox">
+            {{ form.username.label }}
+            {{ form.username }}
+        </div>
+        <div class="inputBox">
+            {{ form.email.label }}
+            {{ form.email }}
+        </div>
+        <div class="inputBox">
+            {{ form.first_name.label }}
+            {{ form.first_name }}
+        </div>
+        <div class="inputBox">
+            {{ form.last_name.label }}
+            {{ form.last_name }}
+        </div>
+        <div class="inputBox">
+            {{ form.password1.label }}
+            {{ form.password1 }}
+        </div>
+        <div class="inputBox">
+            {{ form.password2.label }}
+            {{ form.password2 }}
+        </div>
+        <input id="submitButton" type="submit" value="Register">
     </form>
 </body>
+
 </html>
