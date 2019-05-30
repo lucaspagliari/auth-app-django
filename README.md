@@ -21,6 +21,10 @@ Now start the application:
 python manage.py runserver
 `
   
+In your browser paste the url:  
+`
+http://localhost:8000/
+`
 ### Enter in admin panel
 
 Using you super user that was created enter the following url:
