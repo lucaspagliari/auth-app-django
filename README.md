@@ -6,7 +6,7 @@ A Django web app developed for a intern program. The main goal is to authenticat
 
 > Python 3.7.3
 
-Install requirements.txt:  
+Using the cmd navigate to the project folder and install requirements.txt:  
 `
 python -m pip install -r requeriments.txt
 `  
