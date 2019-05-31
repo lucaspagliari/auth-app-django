@@ -27,9 +27,9 @@ http://localhost:8000/
 `
 ### Enter in admin panel
 
-Using you super user that was created enter the following url:
+Using you super user that was created login on the following url:  
 `
-localhost/admin
+http://localhost:8000/admin
 `
 There you will be able to see all the information about the users.
 
