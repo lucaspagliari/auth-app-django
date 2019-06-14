@@ -90,3 +90,10 @@
     color: #f5f5f5;
     background-color: #4242ff;
 }
+
+#errorMessage {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #ff4242;
+}

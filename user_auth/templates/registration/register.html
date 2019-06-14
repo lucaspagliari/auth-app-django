@@ -42,6 +42,18 @@
         </div>
         <input id="submitButton" type="submit" value="Register">
     </form>
+
+    <div>
+        {% if form.username.errors %}
+        <h4 id="errorMessage">Username may be already taken</h4>
+        {% endif %}
+        {% if form.password2.errors %}
+        <h4 id="errorMessage">Both passwords fields must match</h4>
+        <h4 id="errorMessage">Must have digits and numbers and 8 characters</h4> 
+        <h4 id="errorMessage">8 characters, upper and lower case letters</h4> 
+        {% endif %}
+    </div>
+
 </body>
 
 </html>
